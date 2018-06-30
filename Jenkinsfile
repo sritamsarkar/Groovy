@@ -24,7 +24,7 @@ pipeline {
         stage ('Deployment Stage') {
             steps {
                 withMaven(maven : 'MAVEN_HOME') {
-                    sh 'cp -r /root/.jenkins/workspace/Groovy/target/* /opt/apache-tomcat-8.5.32/webapps/'
+                    sh 'cp -r /root/.jenkins/workspace/mavewebgroovy/target/* /opt/apache-tomcat-8.5.32/webapps/'
                 }
             }
         }
